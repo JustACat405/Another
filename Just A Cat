@@ -1,0 +1,61 @@
+
+
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+
+
+local PhantomForcesWindow = Library:NewWindow("Just A Cat")
+
+
+
+local KillingCheats = PhantomForcesWindow:NewSection("UGC")
+
+
+
+KillingCheats:CreateButton("Get UGC", function()
+local args = {
+    [1] = {
+        ["Visible"] = true,
+        ["distributeAmount"] = 250,
+        ["btnName"] = "Claim!",
+        ["rewardType"] = "UGC",
+        ["Locked"] = false,
+        ["assetID"] = 18967573702,
+        ["image"] = "rbxthumb://type=Asset&id=18967543194&w=420&h=420",
+        ["name"] = "Otaku Backpack",
+        ["missionIndex"] = 2,
+        ["missionAmount"] = 3,
+        ["startTime"] = 1727230200,
+        ["status"] = "Complete",
+        ["mission"] = {
+            ["1"] = {
+                ["missionNum"] = "1",
+                ["description"] = "Join Our Group and Hit the Like Button!",
+                ["taskType"] = "group",
+                ["progress"] = 1,
+                ["taskCount"] = 1,
+                ["status"] = "Complete"
+            },
+            ["3"] = {
+                ["missionNum"] = "3",
+                ["description"] = "Collect 30 Custom Parts",
+                ["taskType"] = "purchaseCustom",
+                ["progress"] = 30,
+                ["taskCount"] = 30,
+                ["status"] = "Complete"
+            },
+            ["2"] = {
+                ["missionNum"] = "2",
+                ["description"] = "Record 1500 helmet on CYCLE CHAIN CUP!",
+                ["taskType"] = "helmetCount",
+                ["progress"] = 1500,
+                ["taskCount"] = 1500,
+                ["status"] = "Complete"
+            }
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.7.0"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MissionService"):WaitForChild("RF"):WaitForChild("awardUGC"):InvokeServer(unpack(args))
+print()
+end)

@@ -59,3 +59,8 @@ local args = {
 game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.7.0"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("MissionService"):WaitForChild("RF"):WaitForChild("awardUGC"):InvokeServer(unpack(args))
 print()
 end)
+
+KillingCheats:CreateButton("Tp to game", function()
+ game:GetService('TeleportService'):Teleport(18556831876, LocalPlayer)
+ print()
+ end)
